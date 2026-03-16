@@ -1,6 +1,6 @@
 # Hundir la Flota
 
-Juego de Hundir la Flota por consola desarrollado en Python como proyecto académico.
+Juego de Hundir la Flota por consola desarrollado en Python.
 
 ## Instalación
 
@@ -8,7 +8,7 @@ Requisitos previos: tener **Python 3.10+** instalado.
 
 ```bash
 # 1. Clonar el repositorio
-git clone <url-del-repo>
+git clone https://github.com/mcdatax/hundir_la_flota.git
 cd "Hundir la flota"
 
 # 2. Crear y activar el entorno virtual
@@ -26,30 +26,24 @@ pip install -r requirements.txt
 python main.py
 ```
 
-O usando el ejecutable generado (no requiere Python):
-
-```bash
-./dist/HundirLaFlota
-```
-
 ## Arquitectura: MVC
 
 El proyecto está organizado siguiendo el patrón **Modelo-Vista-Controlador**:
 
 ```
-models/      → Barco, Tablero (datos y lógica del juego)
-view/        → Pintado del tablero en consola
-controller/  → Juego (coordina modelos y vista)
-main.py      → Punto de entrada
+models/      -> Barco, Tablero (datos y lógica del juego)
+view/        -> Pintado del tablero en consola
+controller/  -> Juego (coordina modelos y vista)
+main.py      -> Punto de entrada
 ```
 
 ## Paradigma: POO
 
 Se usó **Programación Orientada a Objetos**. Las clases principales son:
 
-- `Barco` — eslora, posición, golpes recibidos y estado (`Operativo / Tocado / Hundido`)
-- `Tablero` — cuadrícula numpy, flota de barcos, gestión de ataques
-- `Juego` — turno del jugador, turno de la máquina, lógica de victoria
+- `Barco`: eslora, posición, golpes recibidos y estado (`Operativo / Tocado / Hundido`)
+- `Tablero`: cuadrícula numpy, flota de barcos, gestión de ataques
+- `Juego`: turno del jugador, turno de la máquina, lógica de victoria
 
 ## Dependencias
 
@@ -60,6 +54,6 @@ Se usó **Programación Orientada a Objetos**. Las clases principales son:
 
 ## Modos de juego
 
-- **Opción 1** — Jugar contra la máquina
-- **Opción 2** — Demo automática (ambos jugadores son la máquina)
-- **Opción 3** — Salir
+- **Opción 1**: Jugar contra la máquina
+- **Opción 2**: Demo automática (ambos jugadores son la máquina)
+- **Opción 3**: Salir
