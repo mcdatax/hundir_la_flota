@@ -9,7 +9,7 @@ Requisitos previos: tener **Python 3.10+** instalado.
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/mcdatax/hundir_la_flota.git
-cd "Hundir la flota"
+cd hundir_la_flota
 
 # 2. Crear y activar el entorno virtual
 python -m venv .venv
