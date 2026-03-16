@@ -1,0 +1,53 @@
+# ── ESTE PROYECTO ─────────────────────────────────────────────────────────────
+
+# Carpetas que Python genera automáticamente al ejecutar código.
+# Contienen bytecode compilado para acelerar la carga. Se regeneran solas.
+__pycache__/
+*.pyc
+*.pyo
+
+# Entorno virtual con las dependencias instaladas.
+# Cada desarrollador crea el suyo con: python -m venv .venv
+.venv/
+
+# Archivo oculto que macOS genera en cada carpeta (metadatos del Finder).
+.DS_Store
+
+# Checkpoints que Jupyter crea al guardar notebooks automáticamente.
+.ipynb_checkpoints/
+
+# Notebooks de Jupyter (no necesarios para ejecutar el proyecto).
+*.ipynb
+
+# Archivos Markdown excepto el README.
+*.md
+!README.md
+
+# Caché de mypy (verificación de tipos). Se regenera sola.
+.mypy_cache/
+
+# Archivos generados por PyInstaller al crear el ejecutable.
+build/
+dist/
+*.spec
+
+# ── BUENAS PRÁCTICAS GENERALES ────────────────────────────────────────────────
+
+# Variables de entorno: contraseñas, claves de API, tokens.
+# NUNCA deben subirse al repositorio.
+.env
+.env.*
+
+# Claves criptográficas y certificados SSL.
+*.key
+*.pem
+*.cert
+
+# Logs de ejecución. Pueden contener información sensible.
+*.log
+logs/
+
+# Artefactos de empaquetado para PyPI. No son código fuente.
+dist/
+build/
+*.egg-info/
